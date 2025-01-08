@@ -11,8 +11,8 @@ def binary_search(arr,target):
   return -1
   
 
-arr = [1, 3, 5, 7, 9, 11]
-target = 7
+arr = list(map(int, input("Enter sorted array element seperated by space: ").split()))
+target = int(input("Enter the element you want to search: "))
 
 result = binary_search(arr, target)
 print(f"Element found at index: {result}" if result != -1 else "Element not found")
