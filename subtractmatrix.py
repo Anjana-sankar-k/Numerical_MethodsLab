@@ -4,8 +4,11 @@ def subtract_matrices(mat1, mat2):
   return result
   
   
-matrix1 = [[1, 2, 3], [4, 5, 6], [ 7, 8, 9]]
-matrix2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+rows, cols = map(int, input("Enter the number of rows and columns: ").split())
+print("Enter the elements of the first matrix row-wise: ")
+matrix1 = [list(map(int, input().split())) for _ in range(rows)]
+print("Enter the elements of the second matrix row-wise: ")
+matrix2 = [list(map(int, input().split())) for _ in range(rows)]
 
 result = subtract_matrices(matrix1, matrix2)
 print("Resultant matrix: ")
