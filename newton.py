@@ -28,7 +28,6 @@ def newton_raphson():
             return
             
         x_n = next_x
-        
     print("Newton - Raphson method did not converge within no.of iterations")
     
 newton_raphson()
